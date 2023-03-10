@@ -21,8 +21,8 @@ with c3: st.subheader("Rigideces [t/m]")
 for i in range(n):
     c1,c2,c3 = st.columns([1,3,3])
     with c1: f"Piso {i+1}"
-    with c2: lista_m.append(st.number_input(f"Masa {i+1}",min_value=0.0,label_visibility="collapsed"))
-    with c3: lista_k.append(st.number_input(f"Rigidez {i+1}",min_value=0.0,label_visibility="collapsed"))
+    with c2: lista_m.append(st.number_input(f"Masa {i+1}",min_value=0.0,value=11.0,label_visibility="collapsed"))
+    with c3: lista_k.append(st.number_input(f"Rigidez {i+1}",min_value=0.0,value=3600.0,label_visibility="collapsed"))
 
         
 
